@@ -1,0 +1,43 @@
+option = {
+    title:{
+        text:'csgo最近几个月平均人数',
+         borderWidth: 2,
+         borderColor:'red'
+    },
+    backgroundColor: 'gray',
+    color: ['yellow'],
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {            
+            type: 'line'        
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['2019.10', '2019.11', '2019.12', '2020.1', '2020.2', '2020.3', '2020.4'],
+            axisTick: {
+                alignWithLabel: true
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value'
+        }
+    ],
+    series: [
+        {
+            name: '平均人数',
+            type: 'bar',
+            barWidth: '50%',
+            data: [407275, 426496, 457289, 497278, 542338, 667176, 860593]
+        }
+    ]
+};
